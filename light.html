@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 50px;
+            width: 200px;
+            margin: 20px;
+            position: relative;
+            top: 20px;
+            left: 9px;
+            border-radius: 50px;
+            background-color:burlywood;  
+            letter-spacing: 10px;
+            
+        }
+        
+        img{
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background-color: black;
+            position: relative;
+            left: 100px;
+            top: 50px;
+            border-radius: 150px;
+            border: 6px solid crimson;
+            /* border-left-color: crimson;
+            border-right-color:crimson ;
+            border-top-color:darkgoldenrod ;
+            border-bottom-color:coral; */
+        }
+        .box{
+            height: 500px;
+            width: 500px;
+            border-radius:30px;
+            border: 4px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+   <div class="box" style="background-color: darkcyan">
+   
+    <button id="l"  onclick="turnon()"><b>ON</b></button> 
+    <button  id="r"  onclick="turnoff()"><b>OFF</b></button> <br>
+    <img id="bulb" src="/Asserts/Bulb  off.png" alt="/Asserts/bulb glow.jpg"> <br>
+</div>
+    <script>
+        function turnon()
+        {
+            document.getElementById("bulb").src="/Asserts/bulb glow.jpg";
+        }
+        function turnoff()
+        {
+            document.getElementById("bulb").src="/Asserts/Bulb  off.png";
+        }
+   
+    </script>
+</body>
+</html>
